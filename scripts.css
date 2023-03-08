@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,500;1,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #000;
+    color: #e29b49;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    font-family: 'Roboto Serif', sans-serif;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+img {
+    max-width: 50vw;
+    max-height: 100vh;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 1em;
+}
+
+span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+/*form*/
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+
+.form-content
+{
+    display: block;
+    font-size: 1.5em;
+}
+
+input {
+    font-size: 1em;
+    border-color: cyan;
+    border-radius: 10px;
+
+}
+
+.form-title {
+    color: #da7808;
+    align-items: left;
+    font-size: 1.2em;
+}
+
+.form-content span {
+    font-size: 0.8em;
+}
+
+button {
+    font-size: 2.5rem;
+    background-color: burlywood;
+    color: rgb(30, 70, 110);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+
+/*media*/
+@media only screen and (max-width: 600px) {
+    .paragraph {
+        font-size: 2rem;
+    }
+
+    form {
+        font-size: 1.5em;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+    .paragraph {
+        font-size: 1.5rem;
+    }
+    form {
+        font-size: 1em;
+    }
+}
+
+
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+
